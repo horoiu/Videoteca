@@ -1,0 +1,13 @@
+C:\Users\mario\source\repos\Lab5-1\CreareDB\CreareDB\bin\Debug\CreareDB.exe.config
+C:\Users\mario\source\repos\Lab5-1\CreareDB\CreareDB\bin\Debug\CreareDB.exe
+C:\Users\mario\source\repos\Lab5-1\CreareDB\CreareDB\bin\Debug\CreareDB.pdb
+C:\Users\mario\source\repos\Lab5-1\CreareDB\CreareDB\bin\Debug\MySql.Data.dll
+C:\Users\mario\source\repos\Lab5-1\CreareDB\CreareDB\bin\Debug\Google.Protobuf.dll
+C:\Users\mario\source\repos\Lab5-1\CreareDB\CreareDB\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\mario\source\repos\Lab5-1\CreareDB\CreareDB\bin\Debug\Renci.SshNet.dll
+C:\Users\mario\source\repos\Lab5-1\CreareDB\CreareDB\bin\Debug\MySql.Data.xml
+C:\Users\mario\source\repos\Lab5-1\CreareDB\CreareDB\obj\Debug\CreareDB.csprojAssemblyReference.cache
+C:\Users\mario\source\repos\Lab5-1\CreareDB\CreareDB\obj\Debug\CreareDB.csproj.CoreCompileInputs.cache
+C:\Users\mario\source\repos\Lab5-1\CreareDB\CreareDB\obj\Debug\CreareDB.csproj.CopyComplete
+C:\Users\mario\source\repos\Lab5-1\CreareDB\CreareDB\obj\Debug\CreareDB.exe
+C:\Users\mario\source\repos\Lab5-1\CreareDB\CreareDB\obj\Debug\CreareDB.pdb
