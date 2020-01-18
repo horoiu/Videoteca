@@ -93,5 +93,101 @@ namespace Aplicatie
             return filmeDT;
         }
 
+        public static DataTable selectez_Clienti()
+        {
+            // -- Operatia de interogare --
+            // Cautam si aducem din baza de date DBvideoteca tabela clienti
+            // toate inregistrarile (toti clientii) ordonati alfabetic dupa nume
+            MySqlCommand comClienti = new MySqlCommand();
+            comClienti.Connection = conn;
+            comClienti.CommandText = "SELECT idc, CONCAT(numepre,' --(',adresa,', CNP: ', CAST(cnp as " +
+                "char(13)),')') AS informatii FROM clienti ORDER BY numepre";
+            MySqlDataAdapter clientiAdapt = new MySqlDataAdapter(comClienti);
+            DataTable clientiDT = new DataTable();
+            try
+            {
+                conn.Open();
+                clientiAdapt.Fill(clientiDT);
+            }
+            catch (Exception)
+            {
+                // Aruncam exceptia in Afisare.cs (modulul apelant)
+                throw;
+            }
+            finally
+            {
+                // Inchidem conexiunea cu baza de date
+                conn.Close();
+            }
+            return clientiDT;
+        }
+
+        public static DataTable selectez_Domenii()
+        {
+            // -- Operatia de interogare --
+            // Cautam si aducem din baza de date DBvideoteca tabela domenii
+            // toate inregistrarile (toate domeniile) ordonate alfabetic
+            MySqlCommand comDomenii = new MySqlCommand();
+            comDomenii.Connection = conn;
+            comDomenii.CommandText = "SELECT * FROM domenii ORDER BY denumire ASC ";
+            MySqlDataAdapter domeniiAdapt = new MySqlDataAdapter(comDomenii);
+            DataTable domeniiDT = new DataTable();
+            try
+            {
+                conn.Open();
+                domeniiAdapt.Fill(domeniiDT);
+            }
+            catch (Exception)
+            {
+                // Aruncam exceptia in Afisare.cs (modulul apelant)
+                throw;
+            }
+            finally
+            {
+                // Inchidem conexiunea cu baza de date
+                conn.Close();
+            }
+            return domeniiDT;
+        }
+
+        public static DataTable selectez_FilmeDisponibile(int idDomeniu)
+        {
+            // -- Operatia de interogare --
+            // Cautam si aducem din baza de date DBvideoteca tabela filme join domenii
+            // toate filmele disponibile -care pot fi imprumutate-
+            // din domeniul cu idDomeniu transmis ca parametru ordonate alfabetic
+            // dupa denumire film
+            MySqlCommand comFilme = new MySqlCommand();
+            comFilme.Connection = conn;
+            if (idDomeniu == 0)
+                comFilme.CommandText = "SELECT idf, CONCAT(f.denumire,' (Anul: ',cast(anul as char(4)),', Domeniul: ',d.denumire,')') as date_film FROM filme f JOIN domenii d ON iddomeniu = idd WHERE nrdisponibile > 0 ORDER BY f.denumire";
+            else
+            {
+                comFilme.CommandText = "SELECT idf, CONCAT(f.denumire,' (Anul: ',cast(anul as char(4)),', Domeniul: ',d.denumire,')') as date_film FROM filme f JOIN domenii d ON iddomeniu = idd WHERE iddomeniu = @paramID AND nrdisponibile > 0 ORDER BY f.denumire";
+                comFilme.Parameters.AddWithValue("@paramID", idDomeniu);
+            }
+            MySqlDataAdapter filmeAdapt = new MySqlDataAdapter(comFilme);
+            DataTable filmeDT = new DataTable();
+            try
+            {
+                conn.Open();
+                filmeAdapt.Fill(filmeDT);
+                // Golim parametrii utilizati in comanda SQL pentru a-i putea reutiliza
+                comFilme.Parameters.Clear();
+            }
+            catch (Exception)
+            {
+                // Aruncam exceptia in Afisare.cs (modulul apelant)
+                throw;
+            }
+            finally
+            {
+                // Inchidem conexiunea cu baza de date
+                conn.Close();
+            }
+            return filmeDT;
+        }
+
+
     }
 }
