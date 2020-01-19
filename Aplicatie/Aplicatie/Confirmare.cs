@@ -12,9 +12,15 @@ namespace Aplicatie
 {
     public partial class Confirmare : Form
     {
-        public Confirmare()
+        public Confirmare(string mesaj)
         {
             InitializeComponent();
+            labelConfirmare.Text = mesaj;
+        }
+
+        private void Confirmare_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

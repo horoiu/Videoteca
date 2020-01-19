@@ -63,7 +63,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(112, 244);
+            this.label3.Location = new System.Drawing.Point(112, 246);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(331, 25);
@@ -73,7 +73,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(112, 465);
+            this.label4.Location = new System.Drawing.Point(112, 563);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(144, 25);
@@ -83,65 +83,68 @@
             // comboBoxClienti
             // 
             this.comboBoxClienti.FormattingEnabled = true;
-            this.comboBoxClienti.Location = new System.Drawing.Point(238, 58);
-            this.comboBoxClienti.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.comboBoxClienti.Location = new System.Drawing.Point(208, 70);
+            this.comboBoxClienti.Margin = new System.Windows.Forms.Padding(6);
             this.comboBoxClienti.Name = "comboBoxClienti";
-            this.comboBoxClienti.Size = new System.Drawing.Size(422, 33);
+            this.comboBoxClienti.Size = new System.Drawing.Size(554, 33);
             this.comboBoxClienti.TabIndex = 4;
             // 
             // comboBoxDomenii
             // 
             this.comboBoxDomenii.FormattingEnabled = true;
-            this.comboBoxDomenii.Location = new System.Drawing.Point(316, 146);
-            this.comboBoxDomenii.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.comboBoxDomenii.Location = new System.Drawing.Point(264, 160);
+            this.comboBoxDomenii.Margin = new System.Windows.Forms.Padding(6);
             this.comboBoxDomenii.Name = "comboBoxDomenii";
-            this.comboBoxDomenii.Size = new System.Drawing.Size(344, 33);
+            this.comboBoxDomenii.Size = new System.Drawing.Size(498, 33);
             this.comboBoxDomenii.TabIndex = 5;
+            this.comboBoxDomenii.SelectionChangeCommitted += new System.EventHandler(this.comboBoxDomenii_SelectionChangeCommitted);
             // 
             // checkedListBoxFilme
             // 
             this.checkedListBoxFilme.CheckOnClick = true;
             this.checkedListBoxFilme.FormattingEnabled = true;
             this.checkedListBoxFilme.HorizontalScrollbar = true;
-            this.checkedListBoxFilme.Location = new System.Drawing.Point(238, 300);
-            this.checkedListBoxFilme.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkedListBoxFilme.Location = new System.Drawing.Point(117, 300);
+            this.checkedListBoxFilme.Margin = new System.Windows.Forms.Padding(6);
             this.checkedListBoxFilme.Name = "checkedListBoxFilme";
-            this.checkedListBoxFilme.Size = new System.Drawing.Size(422, 108);
+            this.checkedListBoxFilme.Size = new System.Drawing.Size(645, 212);
             this.checkedListBoxFilme.TabIndex = 6;
             // 
             // dateTimePickerDataRest
             // 
-            this.dateTimePickerDataRest.Location = new System.Drawing.Point(264, 452);
-            this.dateTimePickerDataRest.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateTimePickerDataRest.Location = new System.Drawing.Point(358, 558);
+            this.dateTimePickerDataRest.Margin = new System.Windows.Forms.Padding(6);
             this.dateTimePickerDataRest.Name = "dateTimePickerDataRest";
-            this.dateTimePickerDataRest.Size = new System.Drawing.Size(396, 31);
+            this.dateTimePickerDataRest.Size = new System.Drawing.Size(404, 31);
             this.dateTimePickerDataRest.TabIndex = 7;
             // 
             // buttonInregistreaza
             // 
-            this.buttonInregistreaza.Location = new System.Drawing.Point(117, 577);
-            this.buttonInregistreaza.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonInregistreaza.Location = new System.Drawing.Point(117, 662);
+            this.buttonInregistreaza.Margin = new System.Windows.Forms.Padding(6);
             this.buttonInregistreaza.Name = "buttonInregistreaza";
-            this.buttonInregistreaza.Size = new System.Drawing.Size(268, 44);
+            this.buttonInregistreaza.Size = new System.Drawing.Size(326, 44);
             this.buttonInregistreaza.TabIndex = 8;
             this.buttonInregistreaza.Text = "Inregistreaza imprumutul";
             this.buttonInregistreaza.UseVisualStyleBackColor = true;
+            this.buttonInregistreaza.Click += new System.EventHandler(this.buttonInregistreaza_Click);
             // 
             // buttonRenunta
             // 
-            this.buttonRenunta.Location = new System.Drawing.Point(510, 577);
-            this.buttonRenunta.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonRenunta.Location = new System.Drawing.Point(584, 662);
+            this.buttonRenunta.Margin = new System.Windows.Forms.Padding(6);
             this.buttonRenunta.Name = "buttonRenunta";
-            this.buttonRenunta.Size = new System.Drawing.Size(150, 44);
+            this.buttonRenunta.Size = new System.Drawing.Size(178, 44);
             this.buttonRenunta.TabIndex = 9;
             this.buttonRenunta.Text = "Renunta";
             this.buttonRenunta.UseVisualStyleBackColor = true;
+            this.buttonRenunta.Click += new System.EventHandler(this.buttonRenunta_Click);
             // 
             // Imprumut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 705);
+            this.ClientSize = new System.Drawing.Size(880, 769);
             this.Controls.Add(this.buttonRenunta);
             this.Controls.Add(this.buttonInregistreaza);
             this.Controls.Add(this.dateTimePickerDataRest);
@@ -152,9 +155,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Imprumut";
             this.Text = "Imprumut";
+            this.Load += new System.EventHandler(this.Imprumut_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
