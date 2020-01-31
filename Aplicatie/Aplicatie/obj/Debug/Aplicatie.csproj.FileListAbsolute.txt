@@ -27,7 +27,6 @@ C:\Users\mario\source\repos\Lab6\Aplicatie\Aplicatie\bin\Debug\Google.Protobuf.d
 C:\Users\mario\source\repos\Lab6\Aplicatie\Aplicatie\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\mario\source\repos\Lab6\Aplicatie\Aplicatie\bin\Debug\Renci.SshNet.dll
 C:\Users\mario\source\repos\Lab6\Aplicatie\Aplicatie\bin\Debug\MySql.Data.xml
-C:\Users\mario\source\repos\Lab6\Aplicatie\Aplicatie\obj\Debug\Aplicatie.csprojAssemblyReference.cache
 C:\Users\mario\source\repos\Lab6\Aplicatie\Aplicatie\obj\Debug\Aplicatie.Adaugare.resources
 C:\Users\mario\source\repos\Lab6\Aplicatie\Aplicatie\obj\Debug\Aplicatie.Afisare.resources
 C:\Users\mario\source\repos\Lab6\Aplicatie\Aplicatie\obj\Debug\Aplicatie.Confirmare.resources

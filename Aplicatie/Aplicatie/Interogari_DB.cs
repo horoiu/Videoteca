@@ -188,6 +188,34 @@ namespace Aplicatie
             return filmeDT;
         }
 
-
+        public static DataTable selectez_FilmeDeRestituit(int idClient)
+        {
+            // -- Operatia de interogare --
+            // Cautam si aducem din baza de date DBvideoteca tabela filme join imprumut
+            // toate filmele care au fost imprumutate de catre clientul
+            // cu idClient transmis ca parametru ordonate alfabetic dupa denumire film
+            MySqlCommand comFilmeDeRestituitUnClient = new MySqlCommand();
+            comFilmeDeRestituitUnClient.Connection = conn; ;
+            MySqlDataAdapter filmeAdp = new MySqlDataAdapter(comFilmeDeRestituitUnClient);
+            DataTable filmeDT = new DataTable();
+            comFilmeDeRestituitUnClient.CommandText = "Select idf,Concat(f.denumire,' ',cast(anul as char(4))) as date_film from filme f join imprumuturi i on idfilm = idf where idclient = @idclient order by f.denumire";
+            // Comanda SQL pentru selectarea filmelor imprumutate de un client (in vederea restituirii)
+            comFilmeDeRestituitUnClient.Parameters.AddWithValue("@idclient", idClient);
+            try
+            {
+                conn.Open();// Deschid conexiunea cu serverul de BD
+                filmeAdp.Fill(filmeDT);
+                comFilmeDeRestituitUnClient.Parameters.Clear();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return filmeDT;
+        }
     }
 }

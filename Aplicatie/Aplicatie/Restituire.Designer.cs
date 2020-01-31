@@ -61,6 +61,7 @@
             this.comboBoxClienti.Name = "comboBoxClienti";
             this.comboBoxClienti.Size = new System.Drawing.Size(171, 21);
             this.comboBoxClienti.TabIndex = 2;
+            this.comboBoxClienti.SelectionChangeCommitted += new System.EventHandler(this.comboBoxClient_SelectionChangeCommitted);
             // 
             // checkedListBoxFilme
             // 
@@ -80,6 +81,7 @@
             this.buttonInregistreaza.TabIndex = 4;
             this.buttonInregistreaza.Text = "Confirma restituirea";
             this.buttonInregistreaza.UseVisualStyleBackColor = true;
+            this.buttonInregistreaza.Click += new System.EventHandler(this.buttonInregistreaza_Click);
             // 
             // buttonRenunta
             // 
@@ -104,6 +106,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Restituire";
             this.Text = "Restituire";
+            this.Load += new System.EventHandler(this.Restituire_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
