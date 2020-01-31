@@ -133,6 +133,7 @@
             this.buttonSelectImg.TabIndex = 10;
             this.buttonSelectImg.Text = "Selecteaza imaginea";
             this.buttonSelectImg.UseVisualStyleBackColor = true;
+            this.buttonSelectImg.Click += new System.EventHandler(this.buttonSelectImg_Click);
             // 
             // buttonAdauga
             // 
@@ -142,6 +143,7 @@
             this.buttonAdauga.TabIndex = 11;
             this.buttonAdauga.Text = "Adauga";
             this.buttonAdauga.UseVisualStyleBackColor = true;
+            this.buttonAdauga.Click += new System.EventHandler(this.buttonAdauga_Click);
             // 
             // buttonRenunta
             // 
@@ -151,6 +153,7 @@
             this.buttonRenunta.TabIndex = 12;
             this.buttonRenunta.Text = "Renunta";
             this.buttonRenunta.UseVisualStyleBackColor = true;
+            this.buttonRenunta.Click += new System.EventHandler(this.buttonRenunta_Click);
             // 
             // Adaugare
             // 
@@ -172,6 +175,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Adaugare";
             this.Text = "Adaugare";
+            this.Load += new System.EventHandler(this.Adaugare_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -38,13 +38,15 @@ namespace Aplicatie
 
         private void adaugaDomeniiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Adaugare adaug = new Adaugare();
+            // Actiunea click pe optiunea "Adauga domeniu" va transmite
+            // valoarea unui parametru "D" -domeniu- in clasa Adaugare
+            Adaugare adaug = new Adaugare("D");
             adaug.ShowDialog();
         }
 
         private void adaugaFilmeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Adaugare adaug = new Adaugare();
+            Adaugare adaug = new Adaugare("F");
             adaug.ShowDialog();
         }
 
