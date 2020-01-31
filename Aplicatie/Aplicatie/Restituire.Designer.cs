@@ -89,6 +89,7 @@
             this.buttonRenunta.TabIndex = 5;
             this.buttonRenunta.Text = "Renunta";
             this.buttonRenunta.UseVisualStyleBackColor = true;
+            this.buttonRenunta.Click += new System.EventHandler(this.buttonRenunta_Click);
             // 
             // Restituire
             // 

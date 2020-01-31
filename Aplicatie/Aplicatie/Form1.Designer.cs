@@ -30,18 +30,19 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.filmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adaugaDomeniiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adaugaFilmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.afisareFilmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.imprumutaFilmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.restituieFilmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iesireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBoxUser = new System.Windows.Forms.TextBox();
             this.textBoxParola = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.adaugaDomeniiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adaugaFilmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.afisareFilmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.imprumutaFilmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.restituieFilmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,10 +62,25 @@
             // 
             this.filmeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adaugaDomeniiToolStripMenuItem,
-            this.adaugaFilmeToolStripMenuItem});
+            this.adaugaFilmeToolStripMenuItem,
+            this.modificareToolStripMenuItem});
             this.filmeToolStripMenuItem.Name = "filmeToolStripMenuItem";
             this.filmeToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.filmeToolStripMenuItem.Text = "Filme";
+            // 
+            // adaugaDomeniiToolStripMenuItem
+            // 
+            this.adaugaDomeniiToolStripMenuItem.Name = "adaugaDomeniiToolStripMenuItem";
+            this.adaugaDomeniiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.adaugaDomeniiToolStripMenuItem.Text = "Adauga domenii";
+            this.adaugaDomeniiToolStripMenuItem.Click += new System.EventHandler(this.adaugaDomeniiToolStripMenuItem_Click);
+            // 
+            // adaugaFilmeToolStripMenuItem
+            // 
+            this.adaugaFilmeToolStripMenuItem.Name = "adaugaFilmeToolStripMenuItem";
+            this.adaugaFilmeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.adaugaFilmeToolStripMenuItem.Text = "Adauga filme";
+            this.adaugaFilmeToolStripMenuItem.Click += new System.EventHandler(this.adaugaFilmeToolStripMenuItem_Click);
             // 
             // clientiToolStripMenuItem
             // 
@@ -75,6 +91,27 @@
             this.clientiToolStripMenuItem.Name = "clientiToolStripMenuItem";
             this.clientiToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.clientiToolStripMenuItem.Text = "Clienti";
+            // 
+            // afisareFilmeToolStripMenuItem
+            // 
+            this.afisareFilmeToolStripMenuItem.Name = "afisareFilmeToolStripMenuItem";
+            this.afisareFilmeToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.afisareFilmeToolStripMenuItem.Text = "Afisare filme";
+            this.afisareFilmeToolStripMenuItem.Click += new System.EventHandler(this.afisareFilmeToolStripMenuItem_Click);
+            // 
+            // imprumutaFilmeToolStripMenuItem
+            // 
+            this.imprumutaFilmeToolStripMenuItem.Name = "imprumutaFilmeToolStripMenuItem";
+            this.imprumutaFilmeToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.imprumutaFilmeToolStripMenuItem.Text = "Imprumuta filme";
+            this.imprumutaFilmeToolStripMenuItem.Click += new System.EventHandler(this.imprumutaFilmeToolStripMenuItem_Click);
+            // 
+            // restituieFilmeToolStripMenuItem
+            // 
+            this.restituieFilmeToolStripMenuItem.Name = "restituieFilmeToolStripMenuItem";
+            this.restituieFilmeToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.restituieFilmeToolStripMenuItem.Text = "Restituie filme";
+            this.restituieFilmeToolStripMenuItem.Click += new System.EventHandler(this.restituieFilmeToolStripMenuItem_Click);
             // 
             // iesireToolStripMenuItem
             // 
@@ -127,40 +164,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // adaugaDomeniiToolStripMenuItem
+            // modificareToolStripMenuItem
             // 
-            this.adaugaDomeniiToolStripMenuItem.Name = "adaugaDomeniiToolStripMenuItem";
-            this.adaugaDomeniiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.adaugaDomeniiToolStripMenuItem.Text = "Adauga domenii";
-            this.adaugaDomeniiToolStripMenuItem.Click += new System.EventHandler(this.adaugaDomeniiToolStripMenuItem_Click);
-            // 
-            // adaugaFilmeToolStripMenuItem
-            // 
-            this.adaugaFilmeToolStripMenuItem.Name = "adaugaFilmeToolStripMenuItem";
-            this.adaugaFilmeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.adaugaFilmeToolStripMenuItem.Text = "Adauga filme";
-            this.adaugaFilmeToolStripMenuItem.Click += new System.EventHandler(this.adaugaFilmeToolStripMenuItem_Click);
-            // 
-            // afisareFilmeToolStripMenuItem
-            // 
-            this.afisareFilmeToolStripMenuItem.Name = "afisareFilmeToolStripMenuItem";
-            this.afisareFilmeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.afisareFilmeToolStripMenuItem.Text = "Afisare filme";
-            this.afisareFilmeToolStripMenuItem.Click += new System.EventHandler(this.afisareFilmeToolStripMenuItem_Click);
-            // 
-            // imprumutaFilmeToolStripMenuItem
-            // 
-            this.imprumutaFilmeToolStripMenuItem.Name = "imprumutaFilmeToolStripMenuItem";
-            this.imprumutaFilmeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.imprumutaFilmeToolStripMenuItem.Text = "Imprumuta filme";
-            this.imprumutaFilmeToolStripMenuItem.Click += new System.EventHandler(this.imprumutaFilmeToolStripMenuItem_Click);
-            // 
-            // restituieFilmeToolStripMenuItem
-            // 
-            this.restituieFilmeToolStripMenuItem.Name = "restituieFilmeToolStripMenuItem";
-            this.restituieFilmeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.restituieFilmeToolStripMenuItem.Text = "Restituie filme";
-            this.restituieFilmeToolStripMenuItem.Click += new System.EventHandler(this.restituieFilmeToolStripMenuItem_Click);
+            this.modificareToolStripMenuItem.Name = "modificareToolStripMenuItem";
+            this.modificareToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modificareToolStripMenuItem.Text = "Modificare";
+            this.modificareToolStripMenuItem.Click += new System.EventHandler(this.modificareToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -201,6 +210,7 @@
         private System.Windows.Forms.ToolStripMenuItem afisareFilmeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem imprumutaFilmeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem restituieFilmeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modificareToolStripMenuItem;
     }
 }
 

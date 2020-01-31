@@ -16,5 +16,10 @@ namespace Aplicatie
         {
             InitializeComponent();
         }
+
+        private void buttonRenunta_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

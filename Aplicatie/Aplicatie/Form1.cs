@@ -109,6 +109,12 @@ namespace Aplicatie
             }
         }
 
+        private void modificareToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ModificareDate modif = new ModificareDate();
+            modif.ShowDialog();
+        }
+
         private void restituieFilmeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Restituire restit = new Restituire();

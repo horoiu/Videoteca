@@ -40,3 +40,4 @@ C:\Users\mario\source\repos\Lab6\Aplicatie\Aplicatie\obj\Debug\Aplicatie.csproj.
 C:\Users\mario\source\repos\Lab6\Aplicatie\Aplicatie\obj\Debug\Aplicatie.csproj.CopyComplete
 C:\Users\mario\source\repos\Lab6\Aplicatie\Aplicatie\obj\Debug\Aplicatie.exe
 C:\Users\mario\source\repos\Lab6\Aplicatie\Aplicatie\obj\Debug\Aplicatie.pdb
+C:\Users\mario\source\repos\Lab6\Aplicatie\Aplicatie\obj\Debug\Aplicatie.ModificareDate.resources

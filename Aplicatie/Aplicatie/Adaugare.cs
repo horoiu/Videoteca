@@ -107,6 +107,7 @@ namespace Aplicatie
             textBoxNrTotal.Text = "";
             textBoxAnul.Text = "";
             textBoxImagine.Text = "";
+            this.Close();
         }
 
         private void completez_ComboBoxDomeniul()

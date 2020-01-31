@@ -80,6 +80,12 @@
     </Compile>
     <Compile Include="Imprumut_DB.cs" />
     <Compile Include="Interogari_DB.cs" />
+    <Compile Include="ModificareDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificareDate.Designer.cs">
+      <DependentUpon>ModificareDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Restituire.cs">
@@ -103,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Imprumut.resx">
       <DependentUpon>Imprumut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificareDate.resx">
+      <DependentUpon>ModificareDate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

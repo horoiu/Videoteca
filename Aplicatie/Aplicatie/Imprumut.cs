@@ -173,6 +173,7 @@ namespace Aplicatie
         {
             // Parcurgem lista filmelor si debifam tot ce a fost bifat
             goleste_checkedListBoxFilme();
+            this.Close();
         }
     }
 }
